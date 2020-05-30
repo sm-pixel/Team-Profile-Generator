@@ -41,7 +41,7 @@ inquirer.prompt([
     if (role === "Manager") {
         inquirer.prompt([
             {
-                name: "officeNum",
+                name: "officeNumber",
                 type: "input",
                 message: "What is your office number?"
             }
