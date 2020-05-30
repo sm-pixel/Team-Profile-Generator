@@ -36,7 +36,47 @@ inquirer.prompt([
     }
 ])
 
-
+.then(function(data){
+    //if role = manager
+    if (role === "Manager") {
+        inquirer.prompt([
+            {
+                name: "officeNum",
+                type: "input",
+                message: "What is your office number?"
+            }
+        ])
+        .then(function(managerData){
+            Manager()
+        })
+    }
+    //if role = engineer
+    if (role === "Engineer") {
+        inquirer.prompt([
+            {
+                name: "ghUser",
+                type: "input",
+                message: "What is your GitHub username?"
+            }
+        ])
+        .then(function(engineerData){
+            Engineer()
+        })
+    }
+    //if role = intern
+    else if (role === Intern) {
+        inquirer.prompt([
+            {
+                name: "school",
+                type: "input",
+                message: "What college are you currently attending?"
+            }
+        ])
+        .then(function(internData) {
+            Intern()
+        })
+    }
+})
 // and to create objects for each team member (using the correct classes as blueprints!)
 
 // After the user has input all employees desired, call the `render` function (required
