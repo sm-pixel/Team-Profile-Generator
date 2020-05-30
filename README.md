@@ -1,11 +1,12 @@
 # Team-Profile-Generator
 
 ![npm](https://img.shields.io/npm/v/inquirer?style=flat-square)
+
 # Description 
-An application to dynamically create a Team Profile file from command line prompts.
+An application to dynamically create a Team Profile file from command line prompts. Using the three categories: Manager, Engineer and Intern, add as many employees as you have.
 
 # Demo
-![Team Profile Generator Demo]()
+![Team Profile Generator Demo](assets/teamProfileGenerator.gif)
 
 # Table of Contents
 
@@ -23,7 +24,7 @@ npm i
 ```
 
 ## Usage
-To use this on your local machine fork and then clone. Run the test command and the run 'node app.js' on the command line in the terminal.
+To use this on your local machine fork and then clone. Run the test command and the run 'node app.js' on the command line in the terminal. Add as many employees that you have within the three categories.
 
 ## License
 MIT
